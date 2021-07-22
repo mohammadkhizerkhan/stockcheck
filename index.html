@@ -10,16 +10,25 @@
 </head>
 <body>
     
-    <div class="container">
+    <div class="contents">
 
         <div class="inputs">
-            <input type="text" id="purIn" placeholder="enter the purchase" cols="40"></input>
-            <input type="text" id="stockIn" placeholder="enter the stock" cols="40"></input>
-            <input type="text" id="curIn" placeholder="enter the current" cols="40"></input>
+            <label for="purIn">
+                <input type="text" id="purIn" placeholder="enter the purchase" cols="40"></input>Purchase prize:
+            </label>
+            <br>
+            <label for="stockIn">
+                <input type="text" id="stockIn" placeholder="enter the stock" cols="40"></input>Stock Quantity:
+            </label>
+            <br>
+            <label for="curIn">
+                <input type="text" id="curIn" placeholder="enter the current" cols="40"></input>Current prize
+            </label>
         </div>
-        <br>
-            <button id="click">clickme</button>
-        <br>
+        
+        <div class="outputs">
+            <input id="click" type="button" value="check"/>
+        </div>
             <div name="" id="result" rows="4" cols="40" placeholder="output"></div>
         <script src="/script.js" type="text/javascript"></script>
     </div>

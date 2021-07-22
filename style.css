@@ -1,46 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+:root{
+    --primary-color:#3A529C;
+    --secondary-color:#44A1CF;
+    --hover-color:#30314F;
+}
 
 body{
+    background-image: url('/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height: 100vh;
     margin: 0;
 }
 
+.contents{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 30vh;
+}
 
-
-.container{
+.inputs{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
-/* textarea{
-} */
 
-#click
-{
-    background-color: #72726e;
-    /* border: 2px solid limegreen; */
-    padding: 15px;
+.outputs{
+    display: block;
+    margin: 0 auto 1rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.5rem;
     cursor: pointer;
-    width: 315px;
-    border: 1px solid rgb(7, 7, 7);
-    border-radius: 6px;
-    color: linen;
-    font-size: larger;
-    text-align: center;
 }
-
-.foot{
-    border: 3px solid #0096c7;
-    border-top-left-radius:8px;
-    border-top-right-radius:8px;
-    position: fixed;
-
-    bottom: 0;
-    width: 100%;
-    background-color: #495057;
-    text-align: center;
-    color: linen;
-    font-family: 'Rajdhani', sans-serif;
- }
-
