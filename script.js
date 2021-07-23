@@ -1,5 +1,5 @@
 var btn=document.querySelector('#click')
-
+var body=document.querySelector('.contents')
 var purchase=document.querySelector('#purIn')
 var stock=document.querySelector('#stockIn')
 var current=document.querySelector('#curIn')
@@ -18,11 +18,13 @@ btn.addEventListener('click',function clickHandler(){
 				const loss=((curvalue-purvalue)*stockvalue).toFixed(3);
 				const lossper=(100-((curvalue/purvalue)*100)).toFixed(3);
 				outputTxt.innerHTML=(`You have lossed ${lossper}%. Your total loss is ₹${loss}`)
+				body.style.backgroundImage = "url('/loss.jpg')";
 			}
 			else if(purvalue<curvalue){
 				const gain=((curvalue-purvalue)*stockvalue).toFixed(3);
 				const gainper=(((curvalue/purvalue)*100)-100).toFixed(3);
 				outputTxt.innerHTML=(`You have gained ${gainper}%. Your total profit is ₹${gain}`)
+				body.style.backgroundImage = "url('/pro.jpg')";
 			}
 			else{
 				outputTxt.innerHTML=(`You have not gained or lossed any money`)

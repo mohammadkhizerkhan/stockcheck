@@ -1,6 +1,6 @@
 :root{
-    --primary-color:#3A529C;
-    --secondary-color:#44A1CF;
+    --primary-color:#6AEAF1;
+    --secondary-color:#0F8893;
     --hover-color:#30314F;
 }
 
@@ -13,13 +13,21 @@ body{
     margin: 0;
 }
 
+
 .contents{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
     height: 30vh;
+    background-image: url(/pr.jpg);
+    background-size:cover;
+	background-repeat:no-repeat;
+    margin: 4rem auto;
+    max-width: 76%;
+    min-height: 80vh;
+    box-shadow:  30px 30px 30px  gray;
 }
 
 .inputs{
@@ -27,17 +35,51 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    margin-left: 3rem;
+    color: white;
+    font-size: larger;
 }
 
 
 .outputs{
     display: block;
-    margin: 0 auto 1rem;
+    margin: 0rem 16rem;
     padding: 0.5rem 1rem;
     color: white;
     font-weight: bold;
     border: none;
     border-radius: 1.5rem;
     cursor: pointer;
+}
+
+.inputboxes{
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    padding: 16px;
+    border-radius: 11px;
+    margin: 1rem 1rem 1.5rem 0.2rem;
+    height: 19px;
+    width: 220px;
+    overflow: scroll;
+    color: white;
+    font-size: larger;
+}
+#click{
+    display: block;
+    margin: 0px auto 2rem;
+    padding: 10px 18px;
+    background-color: var(--primary-color);
+    color: rgb(3, 3, 3);
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+}
+
+#result{
+    margin-left: 4rem;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: xx-large;
 }
